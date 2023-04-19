@@ -1,0 +1,15 @@
+
+.pri-button{
+    background-color: $color-primary !important;
+    border: 1px solid $color-primary !important;
+    transition: all .3s ease-in-out;
+    color: $color-dark !important;
+    border-radius: 5px;
+    &:hover,
+    &:focus,
+    &.active{
+        background-color: $color-dark !important;
+        color: $color-primary !important;
+    }
+
+}

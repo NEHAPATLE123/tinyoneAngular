@@ -1,0 +1,52 @@
+
+<footer class="section footer">
+    <div class="container">
+        <div class="row">
+           <div class="col-md-10 offset-md-1 text-center">
+            <h2 class="pri-heading">
+                Inspire your inspiration
+            </h2>
+            <h3 class="sec-heading">
+                Simple to use for your app, products showcase and your inspiration
+            </h3>
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control email mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Enter your Email">
+                <button type="submit" class="btn pri-button mb-2">Submit</button>
+            </form>
+            <app-icons [iconsArray]="iconsListArray"></app-icons>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <address class="address">
+                    <p>HALOVIETNAM LTD</p>
+                    <p>66, Dang Van ngu, Dong Da</p>
+                    <p>Hanoi, Vietnam</p>
+                    <p>
+                        <a href="mailto:nehapatle600@gmail.com">
+                            nehapatle600@gmail.com 
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:8788647500">
+                            8788647500
+                        </a>
+                    </p>
+                </address>
+            </div>
+            <div class="col-md-1 offset-md-1" *ngFor = "let flink of footerLink">
+                <app-icons [ulClassName]="'footerLinks'" [iconsArray]="flink"></app-icons>
+            </div>
+            <!-- <div class="col-md-1 offset-md-1">
+                <app-icons [ulClassName]="'footerLinks'" [iconsArray]="footerLink2"></app-icons>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <app-icons [ulClassName]="'footerLinks'" [iconsArray]="footerLink3"></app-icons>
+            </div>
+            <div class="col-md-1 offset-md-1">
+                <app-icons [ulClassName]="'footerLinks'" [iconsArray]="footerLink4"></app-icons> -->
+            <!-- </div> -->
+        </div>
+    </div>
+</footer>

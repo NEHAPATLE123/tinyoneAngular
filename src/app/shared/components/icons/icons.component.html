@@ -1,0 +1,8 @@
+
+<ul [attr.class]="ulClassName">
+    <li *ngFor="let icon of iconsArray">
+        <a [href]="icon.link" [innerHTML]="icon.icon">
+            <!-- {{icon.icon}} -->
+        </a>
+    </li>
+</ul>
